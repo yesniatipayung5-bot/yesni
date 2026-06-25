@@ -1,59 +1,219 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio Mahasiswa</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penerapan TI pada TPTP</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            background:#f5fff5;
+            color:#333;
+            line-height:1.6;
+        }
+
+        header{
+            background:linear-gradient(rgba(0,100,0,0.7), rgba(0,100,0,0.7)),
+            url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1400&q=80');
+            background-size:cover;
+            background-position:center;
+            color:white;
+            text-align:center;
+            padding:100px 20px;
+        }
+
+        header h1{
+            font-size:3rem;
+            margin-bottom:15px;
+        }
+
+        header p{
+            font-size:1.2rem;
+        }
+
+        .container{
+            width:90%;
+            max-width:1100px;
+            margin:auto;
+            padding:40px 0;
+        }
+
+        .card{
+            background:white;
+            padding:30px;
+            margin-bottom:25px;
+            border-radius:15px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+        }
+
+        h2{
+            color:#1b7c1b;
+            margin-bottom:15px;
+            border-left:5px solid #28a745;
+            padding-left:10px;
+        }
+
+        ul{
+            padding-left:20px;
+        }
+
+        li{
+            margin-bottom:8px;
+        }
+
+        .grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .feature{
+            background:#eafaea;
+            padding:20px;
+            border-radius:12px;
+            text-align:center;
+        }
+
+        .feature h3{
+            color:#1b7c1b;
+            margin-bottom:10px;
+        }
+
+        footer{
+            background:#1b7c1b;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+        }
+
+        @media(max-width:768px){
+            header h1{
+                font-size:2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-<header class="hero">
-  <div class="container">
-    <img src="profile.png" alt="Foto Profil" class="profile">
-    <h1>Mahasiswa Anonim</h1>
-    <p>Mahasiswa | Pembelajar | Pengembang Masa Depan</p>
-  </div>
-</header>
 
-<section class="card">
-  <h2>Tentang Saya</h2>
-  <p>Saya adalah seorang mahasiswa yang memiliki minat dalam pengembangan diri, teknologi, dan inovasi. Portofolio ini dibuat sebagai contoh profesional dengan data anonim.</p>
-</section>
+    <header>
+        <h1>Penerapan Teknologi Informasi pada TPTP</h1>
+        <p>Sistem Monitoring Produksi Tanaman Pangan (e-Tanam)</p>
+    </header>
 
-<section class="card">
-  <h2>Pendidikan</h2>
-  <ul>
-    <li>S1 - Program Studi (Anonim)</li>
-    <li>Fokus pada pembelajaran, penelitian, dan pengembangan keterampilan.</li>
-  </ul>
-</section>
+    <div class="container">
 
-<section class="card">
-  <h2>Keahlian</h2>
-  <div class="skills">
-    <span>Microsoft Office</span>
-    <span>Presentasi</span>
-    <span>Komunikasi</span>
-    <span>Manajemen Waktu</span>
-    <span>Kerja Tim</span>
-  </div>
-</section>
+        <div class="card">
+            <h2>Nama Sistem</h2>
+            <p><strong>e-Tanam (Electronic Crop Production Monitoring System)</strong></p>
+        </div>
 
-<section class="card">
-  <h2>Proyek</h2>
-  <p>• Website Portofolio Pribadi</p>
-  <p>• Presentasi Bisnis Fresh Fruit</p>
-  <p>• Dokumentasi Akademik dan Penelitian</p>
-</section>
+        <div class="card">
+            <h2>Tujuan Sistem</h2>
+            <p>
+                Menyediakan sistem digital untuk memantau pertumbuhan,
+                pemeliharaan, dan hasil produksi tanaman pangan sehingga data
+                budidaya dapat tersimpan dengan baik, mudah diakses, dan
+                digunakan dalam pengambilan keputusan.
+            </p>
+        </div>
 
-<section class="card">
-  <h2>Kontak</h2>
-  <p>Email: anonim@example.com</p>
-  <p>LinkedIn: linkedin.com/in/anonim</p>
-</section>
+        <div class="card">
+            <h2>Masalah yang Ingin Diselesaikan</h2>
+            <ul>
+                <li>Pencatatan budidaya masih dilakukan secara manual.</li>
+                <li>Data pertumbuhan tanaman sering hilang atau tidak lengkap.</li>
+                <li>Sulit melakukan evaluasi produktivitas tanaman.</li>
+                <li>Pembuatan laporan memerlukan waktu yang lama.</li>
+            </ul>
+        </div>
 
-<footer>
-  <p>© 2026 Portfolio Mahasiswa</p>
-</footer>
+        <div class="card">
+            <h2>Cara Kerja Sistem</h2>
+            <ol>
+                <li>Petani membuka aplikasi melalui smartphone atau komputer.</li>
+                <li>Data lahan dan tanaman diinput ke dalam sistem.</li>
+                <li>Kegiatan budidaya dicatat secara digital.</li>
+                <li>Data tersimpan otomatis ke database.</li>
+                <li>Sistem menampilkan grafik pertumbuhan tanaman.</li>
+                <li>Laporan produksi dapat diunduh kapan saja.</li>
+            </ol>
+        </div>
+
+        <div class="card">
+            <h2>Komponen TI yang Digunakan</h2>
+
+            <div class="grid">
+
+                <div class="feature">
+                    <h3>Hardware</h3>
+                    <p>Smartphone, Laptop, Sensor Tanah, Server</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Software</h3>
+                    <p>Aplikasi e-Tanam, Dashboard Monitoring, Database</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Jaringan</h3>
+                    <p>Internet dan WiFi</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Brainware</h3>
+                    <p>Petani, Penyuluh, Admin Sistem, Pengelola Lahan</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Manfaat Sistem</h2>
+            <ul>
+                <li>Data budidaya tersimpan aman dan rapi.</li>
+                <li>Monitoring tanaman lebih mudah.</li>
+                <li>Mempercepat pembuatan laporan.</li>
+                <li>Mengurangi kesalahan pencatatan.</li>
+                <li>Mendukung keputusan berbasis data.</li>
+                <li>Meningkatkan produktivitas tanaman pangan.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Kendala dan Solusi</h2>
+
+            <p><strong>Kendala:</strong> Internet terbatas di area pertanian.</p>
+            <p><strong>Solusi:</strong> Menyediakan fitur offline dan sinkronisasi data.</p>
+
+            <br>
+
+            <p><strong>Kendala:</strong> Pengguna belum terbiasa menggunakan aplikasi.</p>
+            <p><strong>Solusi:</strong> Pelatihan penggunaan aplikasi secara berkala.</p>
+
+            <br>
+
+            <p><strong>Kendala:</strong> Kerusakan perangkat elektronik.</p>
+            <p><strong>Solusi:</strong> Perawatan rutin dan perangkat cadangan.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Teknologi Produksi Tanaman Pangan | Penerapan TI dalam Pertanian Modern</p>
+    </footer>
+
 </body>
 </html>
